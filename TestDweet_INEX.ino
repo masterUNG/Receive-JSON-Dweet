@@ -1,5 +1,5 @@
 #include <ESP8266WiFi.h>                // Include main library
-const char* ssid     = "shareEWTC";     // Set SSID
+const char* ssid     = "iPhoneMaster";     // Set SSID
 const char* password = "12345abcde"; // Set password
 const char* host = "dweet.io";          // Set host 
 
@@ -34,7 +34,7 @@ void loop()
     return;
   }
   //https://dweet.io/get/latest/dweet/for/Test01
-  client.print(String("GET /get/latest/dweet/for/Test01 HTTP/1.1\r\n") +
+  client.print(String("GET /get/latest/dweet/for/masterUNG HTTP/1.1\r\n") +
                "Host: " + host + "\r\n" +
                "Connection: keep-alive\r\n" +
                "Cache-Control: max-age=0\r\n\r\n");
